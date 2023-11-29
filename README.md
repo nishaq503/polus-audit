@@ -5,6 +5,8 @@ The following table shows a quick overview, while subsequent sections provide mo
 
 ## Summary Table
 
+### Clustering
+
 | Family | Plugin | Version | Language | Status | PR | bfio | filepattern | preadator | nyxus |
 | ------ | ------ | ------- | -------- | ------ | -- | ---- | ----------- | --------- | ----- |
 | clustering | k-means-clustering-plugin | 0.3.2-dev | Python | Updated | None | None | 2.0.0 | None | 0.5.0 |
@@ -15,10 +17,20 @@ The following table shows a quick overview, while subsequent sections provide mo
 | clustering | feature-subsetting-plugin | 0.1.11 | Python | Old | None | None | 1.4.5 | None | None |
 | clustering | hdbscan-clustering-plugin | 0.4.7 | Python | Old | None | None | None | None | None |
 | clustering | outlier-removal-plugin | 0.2.5 | Python | Old | None | None | None | None | None |
+
+### Dimension Reduction
+
+| Family | Plugin | Version | Language | Status | PR | bfio | filepattern | preadator | nyxus |
+| ------ | ------ | ------- | -------- | ------ | -- | ---- | ----------- | --------- | ----- |
 | dimension_reduction/PCA | Distributed-Memory | Unknown | Python | Old | None | None | None | None | None |
 | dimension_reduction/PCA | Shared-Memory | 0.1.3 | Python | Old | None | None | None | None | None |
 | dimension_reduction/UMAP | Shared-Memory-GPU | 0.1.0 | C++/Cuda | Unknown | None | None | None | None | None |
 | dimension_reduction/UMAP | Shared-Memory-OpenMP | 0.1.6 | C++ | Unknown | None | None | None | None | None |
+
+### Features
+
+| Family | Plugin | Version | Language | Status | PR | bfio | filepattern | preadator | nyxus |
+| ------ | ------ | ------- | -------- | ------ | -- | ---- | ----------- | --------- | ----- |
 | features | feature-segmentation-eval | 0.2.3 | Python | Updated | None | None | 2.0.1 | None | None |
 | features | nyxus-plugin | 0.1.3 | Python | Old | None | None | 1.4.7 | 0.2.0 | 0.4.0 |
 | features | pixel-segmentation-eval | 0.1.10 | Python | Updated | None | 2.1.9 | 2.0.1 | None | None |
@@ -27,6 +39,11 @@ The following table shows a quick overview, while subsequent sections provide mo
 | features | imagenet-model-featurization-plugin | 0.1.3 | Python | Old | None | 2.1.9 | None | None | None |
 | features | object-spectral-featurization-plugin | 0.1.2 | Python | Old | None | 2.1.9 | None | None | None |
 | features | region-segmentation-eval | 0.2.3 | Python | Updated | None | 2.1.9 | 2.0.1 | None | None |
+
+### Formats
+
+| Family | Plugin | Version | Language | Status | PR | bfio | filepattern | preadator | nyxus |
+| ------ | ------ | ------- | -------- | ------ | -- | ---- | ----------- | --------- | ----- |
 | formats | file-renaming-plugin | 0.2.0 | Python | Updated | None | None | None | None | None |
 | formats | label-to-vector-plugin | 0.7.0-dev30 | Python | Peer Review | [#450](https://github.com/PolusAI/polus-plugins/pull/450) | 2.1.9 | 2.0.1 | None | None |
 | formats | ome-converter-plugin | 0.3.0 | Python | Peer Review | [#486](https://github.com/PolusAI/polus-plugins/pull/486) | 2.1.9 | test-2.2.7 | None | None |
@@ -38,8 +55,18 @@ The following table shows a quick overview, while subsequent sections provide mo
 | formats | tabular-to-feather-plugin | 0.1.4 | Python | Old | None | None | 1.4.7 | None | None |
 | formats | tiledtiff-converter-plugin | 1.1.2 | Java | Unknown | None | None | None | None | None |
 | formats | vector-to-label-plugin | 0.7.0-dev34 | Python | Peer Review | [#450](https://github.com/PolusAI/polus-plugins/pull/450) | 2.1.9 | 2.0.1 | None | None |
+
+### Regression
+
+| Family | Plugin | Version | Language | Status | PR | bfio | filepattern | preadator | nyxus |
+| ------ | ------ | ------- | -------- | ------ | -- | ---- | ----------- | --------- | ----- |
 | regression | basic-flatfield-estimation-plugin | 2.0.0 | Python | Updated | None | 2.1.9 | 2.0.0 | None | None |
 | regression | theia-bleedthrough-estimation-plugin | 0.5.0-dev0 | Python | Peer Review | [#451](https://github.com/PolusAI/polus-plugins/pull/451) | 2.3.1-dev0 | 2.0.1 | None | None |
+
+### Segmentation
+
+| Family | Plugin | Version | Language | Status | PR | bfio | filepattern | preadator | nyxus |
+| ------ | ------ | ------- | -------- | ------ | -- | ---- | ----------- | --------- | ----- |
 | segmentation | aics-classic-seg-plugin | 0.1.11 | Python | Old | None | None | None | None | None |
 | segmentation | cell-nuclei-segmentation | 0.1.4 | Python | Old | None | None | None | None | None |
 | segmentation | imagej-threshold-apply-plugin | 0.4.2 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
@@ -63,6 +90,11 @@ The following table shows a quick overview, while subsequent sections provide mo
 | segmentation | imagej-threshold-yen-plugin | 0.4.2 | Python | Old | None | Unknown | 1.4.4 | None | None |
 | segmentation | smp-training-plugin | 0.5.11 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
 | segmentation | z01-segmentation-plugin | 0.2.0 | Python | Old | None | 2.x | None | None | None |
+
+### Transforms
+
+| Family | Plugin | Version | Language | Status | PR | bfio | filepattern | preadator | nyxus |
+| ------ | ------ | ------- | -------- | ------ | -- | ---- | ----------- | --------- | ----- |
 | transforms | recycle-vector-plugin | 1.5.0 | Python | Old | None | None | 1.4.7 | None | None |
 | transforms/images | apply-flatfield-plugin | 2.0.0-dev8 | Python | Peer Review | [#443](https://github.com/PolusAI/polus-plugins/pull/443) | 2.1.9 | 2.0.0 | None | None |
 | transforms/images | image-assembler-plugin | 1.4.0-dev0 | Python | Peer Review | [#479](https://github.com/PolusAI/polus-plugins/pull/479), [#481](https://github.com/PolusAI/polus-plugins/pull/481) | 2.1.9 | 2.0.4 | 0.4.0.dev2 | None |
@@ -94,6 +126,11 @@ The following table shows a quick overview, while subsequent sections provide mo
 | transforms/tabular | csv-merger-plugin | 0.4.0 | Python | Old | None | None | 1.4.7 | None | None |
 | transforms/tabular | generalized-linear-model-plugin | 0.2.5 | R | Unknown | None | None | None | None | None |
 | transforms/tabular | tabular-thresholding-plugin | 0.1.3 | Python | Updated | None | None | test-2.2.7 | None | None |
+
+### Utils
+
+| Family | Plugin | Version | Language | Status | PR | bfio | filepattern | preadator | nyxus |
+| ------ | ------ | ------- | -------- | ------ | -- | ---- | ----------- | --------- | ----- |
 | utils | filepattern-generator-plugin | 0.2.1 | Python | Old | None | None | 1.4.7 | None | None |
 | utils | csv-collection-merger | 0.1.1 | sh | Old | None | None | None | None | None |
 | utils | generic-to-image-collection-plugin | 0.1.1 | Python | Old | None | 2.x | 1.4.7 | None | None |
@@ -101,6 +138,11 @@ The following table shows a quick overview, while subsequent sections provide mo
 | utils | notebook-plugin | 0.4.0 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
 | utils | stitching-vector-merger-plugin | 0.1.8 | Python | Old | None | None | None | None | None |
 | utils | subset-data-plugin | 0.1.8 | Python | Old | None | None | 1.4.7 | None | None |
+
+### Visualization
+
+| Family | Plugin | Version | Language | Status | PR | bfio | filepattern | preadator | nyxus |
+| ------ | ------ | ------- | -------- | ------ | -- | ---- | ----------- | --------- | ----- |
 | visualization | color-pyramid-builder-plugin | 0.3.3 | Python | Updated | None | 1.x | 1.2.4 | None | None |
 | visualization | feature-heatmap-pyramid-plugin | 0.2.0 | Python | Updated | None | 1.x | 1.2.4 | None | None |
 | visualization | graph-pyramid-builder-plugin | 1.3.8 | Python | Updated | None | 1.x | 1.2.4 | None | None |
