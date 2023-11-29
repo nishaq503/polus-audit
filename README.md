@@ -5,14 +5,14 @@ The following table shows a quick overview, while subsequent sections provide mo
 
 | Family | Plugin | Version | Language | Status | PR | bfio | filepattern | preadator | nyxus |
 | ------ | ------ | ------- | -------- | ------ | -- | ---- | ----------- | --------- | ----- |
-| Clustering | k-means-clustering-plugin | 0.3.2-dev | Python | Updated | None | None | 2.0.0 | None | 0.5.0 |
-| Clustering/K-NN | Distributed-Memory | None | C++ | Unknown | None | None | None | None | None |
-| Clustering/K-NN | Shared-Memory-GPU | 0.1.0 | Cuda | Unknown | None | None | None | None | None |
-| Clustering/K-NN | Shared-Memory-OpenMP | 0.1.0 | C++ | Unknown | None | None | None | None | None |
-| Clustering/K-NN | Shared-Memory-Serial | 0.1.0 | C++ | Unknown | None | None | None | None | None |
-| Clustering | feature-subsetting-plugin | 0.1.11 | Python | Old | None | None | 1.4.5 | None | None |
-| Clustering | hdbscan-clustering-plugin | 0.4.7 | Python | Old | None | None | None | None | None |
-| Clustering | outlier-removal-plugin | 0.2.5 | Python | Old | None | None | None | None | None |
+| clustering | k-means-clustering-plugin | 0.3.2-dev | Python | Updated | None | None | 2.0.0 | None | 0.5.0 |
+| clustering/K-NN | Distributed-Memory | None | C++ | Unknown | None | None | None | None | None |
+| clustering/K-NN | Shared-Memory-GPU | 0.1.0 | Cuda | Unknown | None | None | None | None | None |
+| clustering/K-NN | Shared-Memory-OpenMP | 0.1.0 | C++ | Unknown | None | None | None | None | None |
+| clustering/K-NN | Shared-Memory-Serial | 0.1.0 | C++ | Unknown | None | None | None | None | None |
+| clustering | feature-subsetting-plugin | 0.1.11 | Python | Old | None | None | 1.4.5 | None | None |
+| clustering | hdbscan-clustering-plugin | 0.4.7 | Python | Old | None | None | None | None | None |
+| clustering | outlier-removal-plugin | 0.2.5 | Python | Old | None | None | None | None | None |
 | dimension_reduction/PCA | Distributed-Memory | Unknown | Python | Old | None | None | None | None | None |
 | dimension_reduction/PCA | Shared-Memory | 0.1.3 | Python | Old | None | None | None | None | None |
 | dimension_reduction/UMAP | Shared-Memory-GPU | 0.1.0 | C++/Cuda | Unknown | None | None | None | None | None |
@@ -68,9 +68,10 @@ The following table shows a quick overview, while subsequent sections provide mo
 | transforms/images | montage-plugin | 0.5.0 | Python | Updated | None | 2.1.9 | 2.0.0 | None | None |
 | transforms/images | autocropping-plugin | 1.0.2 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
 | transforms/images | binary-operations-plugin | 0.4.2 | Python | Old | None | 1.x | 1.4.7 | None | None |
+| transforms/images | ftl-label-plugin | 0.3.10 | Python/CPython/Rust | Old | None | 2.1.9 | 1.4.7 | None | None |
 
 <details>
-<summary>Clustering</summary>
+<summary>clustering</summary>
 
 <details>
 <summary>k-means-clsutering-plugin</summary>
@@ -345,7 +346,7 @@ The following table shows a quick overview, while subsequent sections provide mo
 </details>  <!-- end object-spectral-featurization-plugin -->
 
 <details>
-<summary>region-segmentation=eval</summary>
+<summary>region-segmentation-eval</summary>
 
 * Version: 0.2.3
 * Language: Python
@@ -945,6 +946,517 @@ The following table shows a quick overview, while subsequent sections provide mo
 
 </details>  <!-- end binary-operations-plugin -->
 
-</details>
+<details>
+<summary>ftl-label-plugin</summary>
 
-</details>
+* Version: 0.3.10
+* Language: Python/CPython/Rust
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end ftl-label-plugin -->
+
+<details>
+<summary>image-registration-plugin</summary>
+
+* Version: 0.3.5
+* Language: Python
+* Status: Old
+* bfio: 1.x
+* filepattern: 1.2.4
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end image-registration-plugin -->
+
+<details>
+<summary>imagej-deconvolve-richardsonlucy-plugin</summary>
+
+* Version: 0.4.3
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-deconvolve-richardsonlucy-plugin -->
+
+<details>
+<summary>imagej-deconvolve-richardsonlucytv-plugin</summary>
+
+* Version: 0.4.2
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-deconvolve-richardsonlucytv-plugin -->
+
+<details>
+<summary>imagej-filter-addpoissonnoise-plugin</summary>
+
+* Version: 0.4.4
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-filter-addpoissonnoise-plugin -->
+
+<details>
+<summary>imagej-filter-convolve-plugin</summary>
+
+* Version: 0.4.2
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-filter-convolve-plugin -->
+
+<details>
+<summary>imagej-filter-correlate-plugin</summary>
+
+* Version: 0.4.2
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-filter-correlate-plugin -->
+
+<details>
+<summary>imagej-filter-derivativegauss-plugin</summary>
+
+* Version: 0.4.4
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-filter-derivativegauss-plugin -->
+
+<details>
+<summary>imagej-filter-dog-plugin</summary>
+
+* Version: 0.3.2
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-filter-dog-plugin -->
+
+<details>
+<summary>imagej-filter-frangivesselness-plugin</summary>
+
+* Version: 0.4.2
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-filter-frangivesselness-plugin -->
+
+<details>
+<summary>imagej-filter-gauss-plugin</summary>
+
+* Version: 0.3.2
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-filter-gauss-plugin -->
+
+<details>
+<summary>imagej-filter-partialderivative-plugin</summary>
+
+* Version: 0.3.5
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-filter-partialderivative-plugin -->
+
+<details>
+<summary>imagej-filter-sobel-plugin</summary>
+
+* Version: 0.3.2
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-filter-sobel-plugin -->
+
+<details>
+<summary>imagej-filter-tubeness-plugin</summary>
+
+* Version: 0.3.8
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-filter-tubeness-plugin -->
+
+<details>
+<summary>imagej-image-integral-plugin</summary>
+
+* Version: 0.3.2
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-image-integral-plugin -->
+
+<details>
+<summary>imagej-image-invert-plugin</summary>
+
+* Version: 0.4.0
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-image-invert-plugin -->
+
+<details>
+<summary>intensity-projection-plugin</summary>
+
+* Version: 0.1.9
+* Language: Python
+* Status: Old
+* bfio: 2.0.5
+* filepattern: None
+* preadator: 0.2.0
+* nyxus: None
+
+</details>  <!-- end intensity-projection-plugin -->
+
+<details>
+<summary>rolling-ball-plugin</summary>
+
+* Version: 1.1.0-dev0
+* Language: Python
+* Status: Peer Review
+* PR: [#429](https://github.com/PolusAI/polus-plugins/pull/429)
+* bfio: 2.1.9
+* filepattern: None
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end rolling-ball-plugin -->
+
+<details>
+<summary>stack-z-slice-plugin</summary>
+
+* Version: 1.2.4
+* Language: Python
+* Status: Old
+* bfio: 2.x
+* filepattern: 1.4.7
+* preadator: 0.2.0
+* nyxus: None
+
+</details>  <!-- end stack-z-slice-plugin -->
+
+<details>
+<summary>roi-relabel-plugin</summary>
+
+* Version: 0.2.2
+* Language: Python
+* Status: Updated
+* bfio: 2.1.9
+* filepattern: 2.0.0
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end roi-relabel-plugin -->
+
+</details>  <!-- end images -->
+
+<details>
+<summary>recycle-vector-plugin</summary>
+
+* Version: 1.5.0
+* Language: Python
+* Status: Old
+* bfio: None
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end recycle-vector-plugin -->
+
+<details>
+<summary>tabular</summary>
+
+<details>
+<summary>csv-merger-plugin</summary>
+
+* Version: 0.4.0
+* Language: Python
+* Status: Old
+* bfio: None
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end csv-merger-plugin -->
+
+<details>
+<summary>generalized-linear-model-plugin</summary>
+
+* Version: 0.2.5
+* Language: R
+* Status: Unknown
+* bfio: None
+* filepattern: None
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end generalized-linear-model-plugin -->
+
+<details>
+<summary>tabular-thresholding-plugin</summary>
+
+* Version: 0.1.3
+* Language: Python
+* Status: Updated
+* bfio: None
+* filepattern: test-2.2.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end tabular-thresholding-plugin -->
+
+</details>  <!-- end tabular -->
+
+</details>  <!-- end transforms -->
+
+<details>
+<summary>utils</summary>
+
+<details>
+<summary>filepattern-generator-plugin</summary>
+
+* Version: 0.2.1
+* Language: Python
+* Status: Old
+* bfio: None
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end filepattern-generator-plugin -->
+
+<details>
+<summary>csv-collection-merger</summary>
+
+* Version: 0.1.1
+* Language: sh
+* Status: Old
+* bfio: None
+* filepattern: None
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end csv-collection-merger -->
+
+<details>
+<summary>generic-to-image-collection-plugin</summary>
+
+* Version: 0.1.1
+* Language: Python
+* Status: Old
+* bfio: 2.x
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end generic-to-image-collection-plugin -->
+
+<details>
+<summary>imagej-macro-plugin</summary>
+
+* Version: 0.1.3
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end imagej-macro-plugin -->
+
+<details>
+<summary>notebook-plugin</summary>
+
+* Version: 0.4.0
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end notebook-plugin -->
+
+<details>
+<summary>stitching-vector-merger-plugin</summary>
+
+* Version: 0.1.8
+* Language: Python
+* Status: Old
+* bfio: None
+* filepattern: None
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end stitching-vector-merger-plugin -->
+
+<details>
+<summary>subset-data-plugin</summary>
+
+* Version: 0.1.8
+* Language: Python
+* Status: Old
+* bfio: None
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end subset-data-plugin -->
+
+</details>  <!-- end utils -->
+
+<details>
+<summary>visualization</summary>
+
+<details>
+<summary>color-pyramid-builder-plugin</summary>
+
+* Version: 0.3.3
+* Language: Python
+* Status: Updated
+* bfio: 1.x
+* filepattern: 1.2.4
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end color-pyramid-builder-plugin -->
+
+<details>
+<summary>feature-heatmap-pyramid-plugin</summary>
+
+* Version: 0.2.0
+* Language: Python
+* Status: Updated
+* bfio: 1.x
+* filepattern: 1.2.4
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end feature-heatmap-pyramid-plugin -->
+
+<details>
+<summary>graph-pyramid-builder-plugin</summary>
+
+* Version: 1.3.8
+* Language: Python
+* Status: Updated
+* bfio: 1.x
+* filepattern: 1.2.4
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end graph-pyramid-builder-plugin -->
+
+<details>
+<summary>image-cluster-annotation-plugin</summary>
+
+* Version: 0.2.4
+* Language: Python
+* Status: Updated
+* bfio: 2.x
+* filepattern: 1.2.4
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end image-cluster-annotation-plugin -->
+
+<details>
+<summary>precompute-slide-plugin</summary>
+
+* Version: 1.7.0-dev0
+* Language: Python
+* Status: Peer Review
+* PR: [#484](https://github.com/PolusAI/polus-plugins/pull/484)
+* bfio: 2.1.9
+* filepattern: 2.0.4
+* preadator: 0.4.0-dev2
+* nyxus: None
+
+</details>  <!-- end precompute-slide-plugin -->
+
+<details>
+<summary>precompute-volume-plugin</summary>
+
+* Version: 1.7.0-dev0
+* Language: Python
+* Status: Old
+* bfio: 2.1.9
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end precompute-volume-plugin -->
+
+<details>
+<summary>tabular-to-microjson-plugin</summary>
+
+* Version: 0.1.0
+* Language: Python
+* Status: Updated
+* bfio: None
+* filepattern: 2.0.1
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end tabular-to-microjson-plugin -->
+
+</details>  <!-- end visualization -->
