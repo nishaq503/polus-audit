@@ -5,6 +5,35 @@ The following table shows a quick overview, while subsequent sections provide mo
 
 ## Summary Table
 
+The columns are as follows:
+
+* `Family`: The group of plugins that the plugin belongs to. This refers to the (potentially nested) folder that the plugin is in.
+* `Plugin`: The name of the plugin.
+  * I have stripped the `polus-` prefix from the plugin name.
+  * Some plugins did not have the `-plugin` postfix.
+* `Version`: The version of the plugin.
+  * If there is an open PR for the plugin, this number will reflect the version in the PR.
+* `Language`: The language(s) that the plugin is written in.
+* `Status`: The status of the plugin.
+  * `Updated`: The plugin has been updated to the new standard for python plugins.
+  * `Peer Review`: The plugin has been updated to the new standard for python plugins and is currently in peer review.
+  * `Old`: The plugin has not been updated to the new standard for python plugins.
+  * `Unknown`: The plugin is not a python plugin.
+* `PR`: The PR number for the plugin.
+  * If there is no PR, this will be `None`.
+* `bfio`: The version of bfio that the plugin uses.
+  * If the plugin does not use bfio, this will be `None`.
+  * 1.x refers to an undetermined version of bfio before the 2.0 release.
+  * 2.x refers to an undetermined version of bfio before the 2.1.9 release.
+* `filepattern`: The version of filepattern that the plugin uses.
+  * If the plugin does not use filepattern, this will be `None`.
+  * 1.x refers to an undetermined version of filepattern before the 2.0.0 release.
+  * test-2.2.7 refers to the version of filepattern on test-pypi.
+* `preadator`: The version of preadator that the plugin uses.
+  * If the plugin does not use preadator, this will be `None`.
+* `nyxus`: The version of nyxus that the plugin uses.
+  * If the plugin does not use nyxus, this will be `None`.
+
 ### Clustering
 
 | Family | Plugin | Version | Language | Status | PR | bfio | filepattern | preadator | nyxus |
