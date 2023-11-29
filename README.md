@@ -3,6 +3,8 @@
 This is a summary of the plugins on the master branch.
 The following table shows a quick overview, while subsequent sections provide more details.
 
+## Summary Table
+
 | Family | Plugin | Version | Language | Status | PR | bfio | filepattern | preadator | nyxus |
 | ------ | ------ | ------- | -------- | ------ | -- | ---- | ----------- | --------- | ----- |
 | clustering | k-means-clustering-plugin | 0.3.2-dev | Python | Updated | None | None | 2.0.0 | None | 0.5.0 |
@@ -61,6 +63,7 @@ The following table shows a quick overview, while subsequent sections provide mo
 | segmentation | imagej-threshold-yen-plugin | 0.4.2 | Python | Old | None | Unknown | 1.4.4 | None | None |
 | segmentation | smp-training-plugin | 0.5.11 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
 | segmentation | z01-segmentation-plugin | 0.2.0 | Python | Old | None | 2.x | None | None | None |
+| transforms | recycle-vector-plugin | 1.5.0 | Python | Old | None | None | 1.4.7 | None | None |
 | transforms/images | apply-flatfield-plugin | 2.0.0-dev8 | Python | Peer Review | [#443](https://github.com/PolusAI/polus-plugins/pull/443) | 2.1.9 | 2.0.0 | None | None |
 | transforms/images | image-assembler-plugin | 1.4.0-dev0 | Python | Peer Review | [#479](https://github.com/PolusAI/polus-plugins/pull/479), [#481](https://github.com/PolusAI/polus-plugins/pull/481) | 2.1.9 | 2.0.4 | 0.4.0.dev2 | None |
 | transforms/images | image-calculator-plugin | 0.2.0 | Python | Updated | None | 2.1.9 | 1.4.7 | None | None |
@@ -69,9 +72,46 @@ The following table shows a quick overview, while subsequent sections provide mo
 | transforms/images | autocropping-plugin | 1.0.2 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
 | transforms/images | binary-operations-plugin | 0.4.2 | Python | Old | None | 1.x | 1.4.7 | None | None |
 | transforms/images | ftl-label-plugin | 0.3.10 | Python/CPython/Rust | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | image-registration-plugin | 0.3.5 | Python | Old | None | 1.x | 1.2.4 | None | None |
+| transforms/images | imagej-deconvolve-richardsonlucy-plugin | 0.4.3 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | imagej-deconvolve-richardsonlucytv-plugin | 0.4.2 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | imagej-filter-addpoissonnoise-plugin | 0.4.4 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | imagej-filter-convolve-plugin | 0.4.2 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | imagej-filter-correlate-plugin | 0.4.2 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | imagej-filter-derivativegauss-plugin | 0.4.4 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | imagej-filter-dog-plugin | 0.3.2 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | imagej-filter-frangivesselness-plugin | 0.4.2 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | imagej-filter-gauss-plugin | 0.3.2 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | imagej-filter-partialderivative-plugin | 0.3.5 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | imagej-filter-sobel-plugin | 0.3.2 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | imagej-filter-tubeness-plugin | 0.3.8 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | imagej-image-integral-plugin | 0.3.2 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | imagej-image-invert-plugin | 0.4.0 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| transforms/images | intensity-projection-plugin | 1.0.0 | Python | Old | None | 2.0.5 | None | 0.2.0 | None |
+| transforms/images | rolling-ball-plugin | 1.1.0-dev0 | Python | Peer Review | [#429](https://github.com/PolusAI/polus-plugins/pull/429) | 2.1.9 | None | None | None |
+| transforms/images | stack-z-slice-plugin | 1.2.4 | Python | Old | None | 2.x | 1.4.7 | 0.2.0 | None |
+| transforms/images | roi-relabel-plugin | 0.2.2 | Python | Updated | None | 2.1.9 | 2.0.0 | None | None |
+| transforms/tabular | csv-merger-plugin | 0.4.0 | Python | Old | None | None | 1.4.7 | None | None |
+| transforms/tabular | generalized-linear-model-plugin | 0.2.5 | R | Unknown | None | None | None | None | None |
+| transforms/tabular | tabular-thresholding-plugin | 0.1.3 | Python | Updated | None | None | test-2.2.7 | None | None |
+| utils | filepattern-generator-plugin | 0.2.1 | Python | Old | None | None | 1.4.7 | None | None |
+| utils | csv-collection-merger | 0.1.1 | sh | Old | None | None | None | None | None |
+| utils | generic-to-image-collection-plugin | 0.1.1 | Python | Old | None | 2.x | 1.4.7 | None | None |
+| utils | imagej-macro-plugin | 0.1.3 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| utils | notebook-plugin | 0.4.0 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| utils | stitching-vector-merger-plugin | 0.1.8 | Python | Old | None | None | None | None | None |
+| utils | subset-data-plugin | 0.1.8 | Python | Old | None | None | 1.4.7 | None | None |
+| visualization | color-pyramid-builder-plugin | 0.3.3 | Python | Updated | None | 1.x | 1.2.4 | None | None |
+| visualization | feature-heatmap-pyramid-plugin | 0.2.0 | Python | Updated | None | 1.x | 1.2.4 | None | None |
+| visualization | graph-pyramid-builder-plugin | 1.3.8 | Python | Updated | None | 1.x | 1.2.4 | None | None |
+| visualization | image-cluster-annotation-plugin | 0.2.4 | Python | Updated | None | 2.x | 1.2.4 | None | None |
+| visualization | precompute-slide-plugin | 1.7.0-dev0 | Python | Peer Review | [#484](https://github.com/PolusAI/polus-plugins/pull/484) | 2.1.9 | 2.0.4 | 0.4.0-dev2 | None |
+| visualization | precompute-volume-plugin | 1.7.0-dev0 | Python | Old | None | 2.1.9 | 1.4.7 | None | None |
+| visualization | tabular-to-microjson-plugin | 0.1.0 | Python | Updated | None | None | 2.0.1 | None | None |
 
-<details>
-<summary>clustering</summary>
+## Details
+
+### Clustering
 
 <details>
 <summary>k-means-clsutering-plugin</summary>
@@ -182,10 +222,7 @@ The following table shows a quick overview, while subsequent sections provide mo
 
 </details>   <!-- end outlier-removal-plugin -->
 
-</details>  <!-- end Clustering -->
-
-<details>
-<summary>dimension_reduction</summary>
+### Dimension Reduction
 
 <details>
 <summary>PCA</summary>
@@ -249,10 +286,7 @@ The following table shows a quick overview, while subsequent sections provide mo
 
 </details>  <!-- end UMAP -->
 
-</details>  <!-- end dimension_reduction -->
-
-<details>
-<summary>features</summary>
+### Features
 
 <details>
 <summary>feature-segmentation-eval</summary>
@@ -358,10 +392,7 @@ The following table shows a quick overview, while subsequent sections provide mo
 
 </details>  <!-- end region-segmentation-eval -->
 
-</details>  <!-- end features -->
-
-<details>
-<summary>formats</summary>
+### Formats
 
 <details>
 <summary>file-renaming-plugin</summary>
@@ -509,10 +540,7 @@ The following table shows a quick overview, while subsequent sections provide mo
 
 </details>  <!-- end vector-to-label-plugin -->
 
-</details>  <!-- end formats -->
-
-<details>
-<summary>regression</summary>
+### Regression
 
 <details>
 <summary>basic-flatfield-estimation-plugin</summary>
@@ -541,10 +569,7 @@ The following table shows a quick overview, while subsequent sections provide mo
 
 </details>  <!-- end theia-bleedthrough-estimation-plugin -->
 
-</details>  <!-- end regression -->
-
-<details>
-<summary>segmentation</summary>
+### Segmentation
 
 <details>
 <summary>aics-classic-seg-plugin</summary>
@@ -845,13 +870,22 @@ The following table shows a quick overview, while subsequent sections provide mo
 
 </details>  <!-- end z01-segmentation-plugin -->
 
-</details>  <!-- end segmentation -->
+### Transforms
 
 <details>
-<summary>transforms</summary>
+<summary>recycle-vector-plugin</summary>
 
-<details>
-<summary>images</summary>
+* Version: 1.5.0
+* Language: Python
+* Status: Old
+* bfio: None
+* filepattern: 1.4.7
+* preadator: None
+* nyxus: None
+
+</details>  <!-- end recycle-vector-plugin -->
+
+#### Images
 
 <details>
 <summary>apply-flatfield-plugin</summary>
@@ -1207,23 +1241,7 @@ The following table shows a quick overview, while subsequent sections provide mo
 
 </details>  <!-- end roi-relabel-plugin -->
 
-</details>  <!-- end images -->
-
-<details>
-<summary>recycle-vector-plugin</summary>
-
-* Version: 1.5.0
-* Language: Python
-* Status: Old
-* bfio: None
-* filepattern: 1.4.7
-* preadator: None
-* nyxus: None
-
-</details>  <!-- end recycle-vector-plugin -->
-
-<details>
-<summary>tabular</summary>
+#### Tabular
 
 <details>
 <summary>csv-merger-plugin</summary>
@@ -1264,12 +1282,7 @@ The following table shows a quick overview, while subsequent sections provide mo
 
 </details>  <!-- end tabular-thresholding-plugin -->
 
-</details>  <!-- end tabular -->
-
-</details>  <!-- end transforms -->
-
-<details>
-<summary>utils</summary>
+### Utils
 
 <details>
 <summary>filepattern-generator-plugin</summary>
@@ -1362,10 +1375,7 @@ The following table shows a quick overview, while subsequent sections provide mo
 
 </details>  <!-- end subset-data-plugin -->
 
-</details>  <!-- end utils -->
-
-<details>
-<summary>visualization</summary>
+### Visualization
 
 <details>
 <summary>color-pyramid-builder-plugin</summary>
@@ -1458,5 +1468,3 @@ The following table shows a quick overview, while subsequent sections provide mo
 * nyxus: None
 
 </details>  <!-- end tabular-to-microjson-plugin -->
-
-</details>  <!-- end visualization -->
